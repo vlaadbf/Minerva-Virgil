@@ -577,6 +577,20 @@
         top: -40px;
       }
     }
+
+    /* Forțează numele pe o linie pe telefon */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.85rem;   /* puțin mai mic DOAR pe telefon */
+    white-space: nowrap;  /* nu rupe rândul */
+  }
+}
+
+    @media (max-width: 380px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -817,3 +831,4 @@
 
 </body>
 </html>
+
