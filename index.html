@@ -536,37 +536,6 @@
       transform: translateY(0);
     }
 
-    /* BUTON MUZICĂ */
-
-    .music-toggle {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-      z-index: 20;
-      background: rgba(248,245,233,0.93);
-      border-radius: 999px;
-      border:1px solid rgba(0,0,0,.15);
-      padding: 8px 14px;
-      font-size:.7rem;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      gap:6px;
-    }
-
-    .music-dot {
-      width:8px;
-      height:8px;
-      border-radius:999px;
-      background:#aaa;
-    }
-
-    .music-dot.on {
-      background:#2ecc71;
-    }
-
     /* Responsive mic */
 
     @media(max-width:600px){
@@ -583,47 +552,35 @@
       .hero p.meta{font-size:.7rem;letter-spacing:.22em;}
       .rsvp-box{padding:35px 24px;}
     }
-.section-divider {
-  position: relative;
-  width: 100%;
-  height: 0;
-}
 
-.section-divider img {
-  position: absolute;
-  left: 50%;
-  top: -35px;
-  transform: translateX(-50%);
-  width: 70px;
-  background: #fff;
-  padding: 10px 14px;
-  border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
+    .section-divider {
+      position: relative;
+      width: 100%;
+      height: 0;
+    }
 
-@media(max-width:600px){
-  .section-divider img {
-    width: 75px;
-    top: -40px;
-  }
-}
+    .section-divider img {
+      position: absolute;
+      left: 50%;
+      top: -35px;
+      transform: translateX(-50%);
+      width: 70px;
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
 
-
+    @media(max-width:600px){
+      .section-divider img {
+        width: 75px;
+        top: -40px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<!-- MUZICĂ DE FUNDAL 
-<audio id="bg-audio" loop>
-
-  <source src="melodie.mp3" type="audio/mpeg">
-</audio>
-
-<button class="music-toggle" id="music-toggle">
-  <span class="music-dot" id="music-dot"></span>
-  Muzică
-</button>
--->
 <!-- HERO cu VIDEO -->
 <section class="hero">
   <video autoplay muted loop playsinline class="bg-video">
@@ -633,7 +590,7 @@
   <div class="hero-content reveal">
     <p class="topline">Save the date</p>
     <h1>Minerva &amp; Virgil</h1>
-    <p class="meta">30 iunie 2025 · 15:00</p>
+    <p class="meta">23 Mai 2026 · 15:00</p>
 
     <div class="countdown">
       <div class="time-box"><span id="days">00</span><small>Zile</small></div>
@@ -649,52 +606,47 @@
   </a>
 </section>
 
-<!-- INVITAȚIE + HARTĂ -->
+<!-- INVITAȚIE -->
 <section id="details" class="section-main">
   <div class="title reveal">
     <span>Invitație</span>
     <h2>Cununia civilă pe plajă</h2>
   </div>
 
+  <div class="invitation-card card reveal">
+    <p>
+      Vă invităm să fiți alături de noi la cununia noastră civilă,
+      care va avea loc pe plajă, la ora <strong>15:00</strong>,
+      într-un cadru cald, natural și plin de emoție.
+    </p>
 
-    <!-- CARD INVITAȚIE -->
-    <div class="invitation-card card reveal">
+    <p>
+      Ne-ar face o mare bucurie să împărtășim această zi specială împreună.
+    </p>
 
-      <p>
-        Vă invităm să fiți alături de noi la cununia noastră civilă,
-        care va avea loc pe plajă, la ora <strong>15:00</strong>,
-        într-un cadru cald, natural și plin de emoție.
-      </p>
+    <p class="location">
+      Evenimentul va fi la<br>
+      <strong>Glamour by the Sea – Constanța</strong>
+    </p>
 
-      <p>
-        Ne-ar face o mare bucurie să împărtășim această zi specială împreună.
-      </p>
+    <p class="theme">
+      Tematică: <strong>White &amp; Sand</strong>
+    </p>
 
-      <p class="location">
-        Evenimentul va fi la<br>
-        <strong>Glamour by the Sea – Constanța</strong>
-      </p>
-
-      <p class="theme">
-        Tematică: <strong>White &amp; Sand</strong>
-      </p>
-
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=Glamour+by+the+Sea+Constanta"
-        target="_blank"
-        class="maps-link"
-      >
-        Vezi locația pe Google Maps
-      </a>
-
-
-
-
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Glamour+by+the+Sea+Constanta"
+      target="_blank"
+      class="maps-link"
+    >
+      Vezi locația pe Google Maps
+    </a>
   </div>
 </section>
+
 <div class="section-divider">
   <img src="wedding-icon.svg" alt="Divider icon">
 </div>
+
 <!-- DRESS CODE & CULORI -->
 <section id="dresscode" class="section-alt">
   <div class="title reveal">
@@ -706,13 +658,10 @@
     <div class="dress-card reveal">
       <h3>Dress code: nuanțe deschise</h3>
       <p>
-        Dress code: în nuanțe deschise, inspirate de alb, bej și nisip.
-        Rochii fluide, cămăși din in sau bumbac, pantaloni lejeri, costume
-        deschise la culoare și sandale sau pantofi comozi pentru plajă.
+        În nuanțe deschise, inspirate de alb, bej și nisip. Rochii fluide, cămăși din in sau bumbac, pantaloni lejeri, costume deschise la culoare.
       </p>
       <p style="margin-top:14px;">
-        Vă rugăm să evitați culorile foarte închise, ne dorim o atmosferă luminoasă,
-        aerisită, în ton cu marea și nisipul.
+        Vă rugăm să evitați culorile foarte închise, ne dorim o atmosferă luminoasă, aerisită, în ton cu marea și nisipul.
       </p>
     </div>
 
@@ -786,7 +735,8 @@
           <option value="vin">Voi fi prezent(ă)</option>
           <option value="nu vin">Nu pot ajunge</option>
         </select>
-        <input id="guests" type="number" placeholder="Număr persoane">
+        <input id="adults" type="number" placeholder="Număr adulți">
+        <input id="kids" type="number" placeholder="Număr copii">
         <textarea id="message" rows="3" placeholder="Mesaj opțional"></textarea>
 
         <button type="submit">Confirm pe WhatsApp</button>
@@ -833,7 +783,8 @@
 
     const name = document.getElementById("name").value.trim();
     const status = document.getElementById("status").value;
-    const guests = document.getElementById("guests").value.trim();
+    const adults = document.getElementById("adults").value.trim();
+    const kids = document.getElementById("kids").value.trim();
     const message = document.getElementById("message").value.trim();
 
     if (!name || !status) {
@@ -841,7 +792,7 @@
       return;
     }
 
-    const text = `Salut, sunt ${name}. ${status}. Persoane: ${guests || 1}. Mesaj: ${message || "-"}`;
+    const text = `Salut, sunt ${name}. ${status}. Adulti: ${adults || 0}. Copii: ${kids || 0}. Mesaj: ${message || "-"}`;
 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
   });
@@ -862,31 +813,7 @@
   );
 
   revealEls.forEach(el => observer.observe(el));
-
-  // MUZICĂ – toggle
-  const audio = document.getElementById('bg-audio');
-  const musicToggle = document.getElementById('music-toggle');
-  const musicDot = document.getElementById('music-dot');
-  let musicOn = false;
-
-  musicToggle.addEventListener('click', () => {
-    if (!audio) return;
-
-    if (musicOn) {
-      audio.pause();
-      musicOn = false;
-      musicDot.classList.remove('on');
-    } else {
-      audio.play().then(() => {
-        musicOn = true;
-        musicDot.classList.add('on');
-      }).catch(() => {
-        // dacă browserul nu permite imediat, userul poate încerca din nou
-      });
-    }
-  });
 </script>
 
 </body>
 </html>
-
